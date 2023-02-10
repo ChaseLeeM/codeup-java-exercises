@@ -78,8 +78,8 @@ public class HelloWorld {
         double wdth = Double.parseDouble(width.nextLine());
         double area = wdth * lngth;
         double perimeter = (lngth + wdth) * 2;
-        System.out.println("The area of the room is " + area);
-        System.out.println("The perimeter of the room is " + perimeter);
+        System.out.printf("The area of the room is: %.2f%n", area);
+        System.out.printf("The perimeter of the room is: %.2f ", perimeter);
 
 
     }
