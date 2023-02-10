@@ -52,7 +52,17 @@ public class HelloWorld {
         while(words.hasNext()){
             String word = words.next();
             System.out.println(word);
+            break;
         }
+
+        Scanner noLoop = new Scanner(System.in);
+        System.out.println("Enter three words:");
+        String first = noLoop.next();
+        String second = noLoop.next();
+        String third = noLoop.next();
+        System.out.println(first);
+        System.out.println(second);
+        System.out.println(third);
 
         Scanner str1 = new Scanner(System.in);
         System.out.println("Enter a sentence:");
