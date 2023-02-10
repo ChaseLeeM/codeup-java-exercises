@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class HelloWorld {
@@ -33,27 +34,27 @@ public class HelloWorld {
         double pi = 3.14159;
         System.out.printf("The value of pi is approximately %.2f", pi);
 
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("Enter your favorite holiday:");
-//        String favoriteHoliday = sc.nextLine();
-//        System.out.println(favoriteHoliday);
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("Please enter your age:");
-//        int age = scanner.nextInt();
-//        System.out.println(age);
-
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your favorite holiday:");
+        String favoriteHoliday = sc.nextLine();
+        System.out.println(favoriteHoliday);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter your age:");
+        int age = scanner.nextInt();
+        System.out.println(age);
+
+        Scanner enter = new Scanner(System.in);
         System.out.println("Enter an integer:");
-        int num = sc.nextInt();
+        int num = enter.nextInt();
         System.out.println(num);
 
-        Scanner words = new Scanner(System.in);
-        System.out.println("Enter 3 words:");
-        while(words.hasNext()){
-            String word = words.next();
-            System.out.println(word);
-            break;
-        }
+//        Scanner words = new Scanner(System.in);
+//        System.out.println("Enter 3 words:");
+//        while(words.hasNext()){
+//            String word = words.next();
+//            System.out.println(word);
+//            break;
+//        }
 
         Scanner noLoop = new Scanner(System.in);
         System.out.println("Enter three words:");
@@ -68,6 +69,18 @@ public class HelloWorld {
         System.out.println("Enter a sentence:");
         String sentence = str1.nextLine();
         System.out.println(sentence);
+
+        Scanner length = new Scanner(System.in);
+        System.out.println("Enter the length of the room:");
+        double lngth = Double.parseDouble(length.nextLine());
+        Scanner width = new Scanner(System.in);
+        System.out.println("Enter the width of the room:");
+        double wdth = Double.parseDouble(width.nextLine());
+        double area = wdth * lngth;
+        double perimeter = (lngth + wdth) * 2;
+        System.out.println("The area of the room is " + area);
+        System.out.println("The perimeter of the room is " + perimeter);
+
 
     }
 
