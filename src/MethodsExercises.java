@@ -56,7 +56,7 @@ public class MethodsExercises {
     }
     public static int diceRoll(int x, int i){
         Scanner dice = new Scanner(System.in);
-        System.out.println("Enter the number of sides for a pair of dice:";)
+        System.out.println("Enter the number of sides for a pair of dice:");
         int userInput = dice.nextInt();
                 if (userInput < 1 || userInput > 100) {
             System.out.println("Invalid input.");
@@ -66,7 +66,7 @@ public class MethodsExercises {
             int userRoll2 = (int) (Math.random() * userInput) + 1;
             return userRoll + userRoll2;
         }
-//    }
+    }
 
 
 }
