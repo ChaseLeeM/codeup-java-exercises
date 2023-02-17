@@ -1,6 +1,8 @@
 package movies;
 import util.Input;
 
+import java.util.Arrays;
+
 
 public class MoviesApplication {
     public static void main(String[] args) {
@@ -47,9 +49,17 @@ Input input = new Input();
                         System.out.println(movie.getName() + " -- " + movie.getCategory());
                     }
                 }
-            }  else {
+            } else if (userChoice == 6)  {
+                System.out.println("Enter the name and category of the movie: ");
+                String name = input.getString();
+                String category = input.getString();
+                Movie newMovie = new Movie(name, category);
+                Movie[] newFilms = Arrays.copyOf(films, films.length + 1);
+                newFilms[newFilms.length - 1] = newMovie;
+                films = newFilms;
+            } else {
                 System.out.println("Invalid input");
-            }
+        }
         } while (keepGoing);
 
     }
