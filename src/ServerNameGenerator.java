@@ -14,5 +14,4 @@ public class ServerNameGenerator {
         System.out.println(serverName(server.adjectives) + "-" + serverName(server.nouns));
     }
 
-
 }
